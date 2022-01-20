@@ -12,7 +12,6 @@ public class Main1000 {
             y = sc.nextInt();
             arr.add(x+y);
         }
-
         for(int i=0;i<arr.size()-1;i++){
             System.out.println(arr.get(i));
         }

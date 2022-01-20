@@ -6,6 +6,7 @@ public class Main1000 {
         Scanner sc = new Scanner(System.in);
         int x =0;
         int y =1;
+
         ArrayList<Integer> arr = new ArrayList<>();
         while(x+y !=0){
             x = sc.nextInt();

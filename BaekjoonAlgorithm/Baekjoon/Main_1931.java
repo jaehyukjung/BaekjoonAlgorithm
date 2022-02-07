@@ -15,28 +15,22 @@ public class Main_1931 {
         }
         Arrays.sort(meet, new Comparator<int[]>() {
             public int compare(int[] s1, int[] s2) {
-                if((s1[0]==s2[0]))
-                    return s1[1]-s2[1];
-                else return s1[0] - s2[0];
+                return s1[0] - s2[0];
+            }
+        });
+        Arrays.sort(meet, new Comparator<int[]>() {
+            public int compare(int[] s1, int[] s2) {
+                return s1[1] - s2[1];
             }
         });
 
-        int count =1;
-        int endtime = meet[N-1][1];
+        int count =0;
+        int endtime = 0;
 
-        for(int i=0;i<N;i++){
-            if(endtime>meet[i][1]) {
-                endtime = meet[i][1];
-            }
-
-        }
 
         for(int i=0;i<N;i++){
             if(endtime<=meet[i][0]){
                 endtime = meet[i][1];
-                for(int j=i+1;j<N;j++){
-                    if(endtime>meet[j][1]) endtime = meet[j][1];
-                }
                 count ++;
             }
         }

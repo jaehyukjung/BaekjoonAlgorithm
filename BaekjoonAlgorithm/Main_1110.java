@@ -1,12 +1,13 @@
 import java.util.Scanner;
 
-public class Main {
+public class Main_1110 {
     public static void main(String[] argv) {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
         int num = 0;
         int N1=N;
         int cnt=0;
+
 
         do{
             num = (N1%10)*10+((N1/10)+N1%10)%10;

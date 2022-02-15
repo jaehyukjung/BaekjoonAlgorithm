@@ -7,6 +7,7 @@ public class Main_1755 {
     public static void main(String[] argv) {
         String str[]={"zero","one","two","three","four","five","six","seven","eight","nine"};
         char num[]={'0','1','2','3','4','5','6','7','8','9'};
+        int num2[]={0,1,2,3,4,5,6,7,8,9};
 
         Scanner sc=new Scanner(System.in);
         int M = sc.nextInt();
@@ -37,12 +38,8 @@ public class Main_1755 {
         }
         Arrays.sort(str2);
 
-
         int arr1[]=new int[N-M+1];
-        int num2[]=new int[10];
-        for(int i=0;i<10;i++){
-            num2[i]= Integer.valueOf(num[i])-48;
-        }
+
         for(int i=0;i<arr1.length;i++){
             arr[i] = str2[i].split(" ");
             for(int j=0;j<10;j++) {
@@ -62,7 +59,5 @@ public class Main_1755 {
             System.out.print(arr1[i]+" ");
             if(i%10==9) System.out.println();
         }
-
-
     }
 }

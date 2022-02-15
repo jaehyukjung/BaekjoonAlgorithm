@@ -2,7 +2,7 @@ import javax.imageio.IIOException;
 import java.io.*;
 import java.util.Scanner;
 
-public class Main {
+public class Main_11022 {
     public static void main(String[] argv) throws IOException {
 
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));

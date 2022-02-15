@@ -1,4 +1,4 @@
-package Baekjoon;
+package Binarysearch;
 
 import java.util.Arrays;
 import java.util.Scanner;

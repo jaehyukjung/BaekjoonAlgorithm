@@ -11,7 +11,6 @@ public class Main_10814 {
             name[i][0]=sc.next();
             name[i][1]=sc.next();
         }
-
         Arrays.sort(name, new Comparator<String[]>() {
             public int compare(String[] s1, String[] s2) {
                 return Integer.parseInt(s1[0]) - Integer.parseInt(s2[0]);

@@ -44,9 +44,5 @@ public class Main_11060 {
         }
         System.out.println(cnt);*/ //여기까지가 내가 푼 풀이 맞데틀..
 
-
-
-
-
     }
 }

@@ -19,13 +19,16 @@ public class Main_3052 {
             arr1[i] = sc.nextInt();
             arr2[i] = arr1[i]%42;
         }
+
         int cnt=0;
         for(int i=0;i<10;i++){
             for(int j=0;j<42;j++){
                 if(arr2[i]==j) arr1[i]=j;
             }
         }
+
         Arrays.sort(arr1);
+
         int num = arr1[0];
         arr4.add(num);
         for(int i=1;i<10;i++){

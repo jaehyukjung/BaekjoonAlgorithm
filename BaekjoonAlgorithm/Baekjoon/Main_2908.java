@@ -1,6 +1,32 @@
 package Baekjoon;
 
 import java.util.Scanner;
+class answer{
+    private int[] n1, n2;
+    private int big1=0, big2=0;
+
+    void big(int num1, int num2) {
+        n1 = new int[3];
+        n2 = new int[3];
+
+        for(int i=0; i<n1.length; i++) {
+            n1[i] = num1%10;
+            num1 = num1 / 10;
+            n2[i] = num2%10;
+            num2 = num2 / 10;
+        }
+
+        for(int i=0; i< n1.length; i++) {
+            big1 += n1[i] * (Math.pow(10, n1.length-i-1));
+        }
+
+        for(int i=0; i<n2.length; i++) {
+            big2 += n2[i] * Math.pow(10, n2.length-i-1);
+        }
+        if(big1>big2) System.out.println(big1);
+        else if(big2>big1) System.out.println(big2);
+    }
+}
 
 public class Main_2908 {
     public static void main(String[] argv){

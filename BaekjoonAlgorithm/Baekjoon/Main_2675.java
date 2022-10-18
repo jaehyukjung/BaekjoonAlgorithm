@@ -3,6 +3,9 @@ package Baekjoon;
 import java.util.Scanner;
 
 public class Main_2675 {
+    static char next(char ch) {
+        return (char)(ch+1);
+    }
     public static void main(String[] argv){
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
@@ -21,6 +24,14 @@ public class Main_2675 {
                 }
             }
             System.out.println();
+        }
+
+
+        String s = sc.next();
+        int sum =0;
+        for (int i=0;i<s.length();i++){
+            int n = s.charAt(i) -'0';
+            sum = sum+n;
         }
     }
 }

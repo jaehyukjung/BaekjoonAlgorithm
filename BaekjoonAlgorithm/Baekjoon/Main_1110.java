@@ -1,3 +1,5 @@
+package Baekjoon;
+
 import java.util.Scanner;
 
 public class Main_1110 {
